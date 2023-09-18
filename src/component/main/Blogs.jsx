@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const Blogs = ({bookmarkBtn}) => {
     const [blogs,setBlogs] = useState([]);
     useEffect(()=>{
-        fetch('../../../blogs.json')
+        fetch('blogs.json')
         .then(res => res.json())
         .then(data => setBlogs(data))
 
